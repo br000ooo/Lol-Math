@@ -1,0 +1,71 @@
+/* Common styles for all pages */
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: darkgray;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+}
+
+.navbar {
+    display: flex;
+    background-color: darkgrey;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for Home Page */
+.content {
+    padding: 20px;
+    color: white; /* Set text color to white */
+}
+
+.content h1, p {
+text-align:  center;
+  color: white;    
+}
+
+.Games-Container img{
+   width: 150px;
+    height: 150px;
+}
+.Games-Container {
+    text-align: justify;
+    width: 120;
+    height: 120;
+}
+.Settings-container {
+    align-items: center;
+}
