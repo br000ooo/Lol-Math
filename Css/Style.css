@@ -1,6 +1,6 @@
 /* Common styles for all pages */
 body {
-    background-color: #000;
+    background-color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,20 +8,24 @@ body {
 
 .nav {
     background-color: darkgray;
-    padding: 50px 20px; /* Added padding for sides */
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav img {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
 }
 
 .navbar {
     display: flex;
-    gap: 10px; /* Added gap for spacing */
+    background-color: darkgrey;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
 }
 
 .navbar button {
@@ -31,38 +35,53 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 .navbar button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Change on hover */
 }
 
-/* Styles for Home Page */
+/* Styles for Home and Games Page */
 .content {
     padding: 20px;
-    color: white;
-    text-align: center; /* Centralized all text */
+    color: white; /* White text for better contrast on dark background */
+    text-align: center;
 }
 
 .content h1, .content p {
-    margin: 10px 0; /* Added margins for better spacing */
+    margin: 10px 0; /* Spacing between elements */
 }
 
-/* Games Container Styles */
 .games-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Centered games */
+    gap: 20px; /* Space between game items */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.games-container a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 .games-container img {
     width: 150px;
     height: 150px;
+    margin-bottom: 10px; /* Space between image and game name */
 }
 
-/* Settings Container */
+.games-container a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Highlighted text on hover */
+}
+
+/* Settings container - not used in this page but included for consistency */
 .settings-container {
     display: flex;
     justify-content: center;
@@ -87,4 +106,3 @@ body {
         height: 120px;
     }
 }
-
