@@ -18,7 +18,7 @@ h1, h2, h3, p {
 /* Header */
 header {
     background-color: #d3d3d3; /* Set the header background to orange */
-    color: white;
+    color: 000000;
     padding: 20px 0;
     text-align: center;
 }
@@ -48,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: 000000;
     text-decoration: none;
     font-weight: bold;
 }
