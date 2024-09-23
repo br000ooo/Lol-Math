@@ -17,7 +17,7 @@ h1, h2, h3, p {
 
 /* Header */
 header {
-    background-color: #FFA500; /* Set the header background to orange */
+    background-color: #d3d3d3; /* Set the header background to orange */
     color: white;
     padding: 20px 0;
     text-align: center;
