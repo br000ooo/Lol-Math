@@ -21,6 +21,7 @@ header {
     color: #000000;
     padding: 20px 0;
     text-align: center;
+    font-style: Fantasy;
 }
 
 header .logo {
@@ -40,17 +41,20 @@ nav ul {
     padding: 0;
     text-align: center;
     margin-top: 10px;
+    font-style: Fantasy
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 10px;
+    
 }
 
 nav ul li a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+     font-style: Fantasy
 }
 
 nav ul li a:hover {
