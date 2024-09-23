@@ -6,42 +6,55 @@ body {
     padding: 0;
 }
 
-.nav {
-    background-color: darkgray;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.nav img {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-}
-
-.navbar {
-    display: flex;
-    background-color: darkgrey;
-    gap: 10px; /* Space between buttons */
-    align-items: center;
-}
-
-.navbar button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
+h1, h2, h3 {
     text-align: center;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-.navbar button:hover {
-    background-color: #45a049; /* Change on hover */
+/* Header */
+header {
+    background-color: #FFA500; /* Set the header background to orange */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header #logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Styles for Home and Games Page */
