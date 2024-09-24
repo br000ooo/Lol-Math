@@ -1,125 +1,112 @@
-/* Common styles for all pages */
 body {
-    background-color: #000000;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: sans-serif;
+  font-size: "25px";
+  color: #ffffff;
+  text-align: left;
+  background-color: #1c1c1c;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+a {
+  text-decoration: none;
+  color: #0084ff;
+}
+.text-center {
+  text-align: center;
+}
+.game-link {
+  height: 400px;
+  width: 300px;
+}
+.game-tile {
+  background-color: #949494;
+  height: 400px;
+  width: 300px;
+  color: #ffffff;
+  border-radius: 30px;
+  -webkit-animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.game-tile:hover {
+  text-decoration: none;
+  -webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.game-icon {
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+.game-title {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .container {
-    width: 90%;
-    margin: 0 auto;
+  padding: 10px;
 }
-
-h1, h2, h3, p {
-    text-align: center;
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
 }
-
-/* Header */
-header {
-    background-color: #d3d3d3; /* Set the header background to orange */
-    color: #000000;
-    padding: 20px 0;
-    text-align: center;
-    font-style: Fantasy;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-header #logo {
-    width: 80px;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 10px;
-    font-style: Fantasy
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-    
-}
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-     font-style: Fantasy
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Styles for Home and Games Page */
-.content {
-    padding: 20px;
-    color: white; /* White text for better contrast on dark background */
-    text-align: center;
-}
-
-.content h1, .content p {
-    margin: 10px 0; /* Spacing between elements */
-}
-
-.games-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Space between game items */
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.games-container a {
-    display: block;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.games-container img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px; /* Space between image and game name */
-}
-
-.games-container a:hover {
-    text-decoration: underline;
-    color: #4CAF50; /* Highlighted text on hover */
-}
-
-/* Settings container - not used in this page but included for consistency */
-.settings-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .navbar button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .games-container img {
-        width: 120px;
-        height: 120px;
-    }
+#mySearch {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  padding: 11px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  background-color: rgb(53, 53, 53);
 }
