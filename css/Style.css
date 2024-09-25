@@ -64,12 +64,10 @@ body {
 }
 
 .games-container a {
-    display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center;
+    display: block;
+    text-align: center;
     color: white;
     text-decoration: none;
-    max-width: 150px; /* Ensure the image and text fit nicely */
 }
 
 .games-container img {
@@ -78,13 +76,8 @@ body {
     margin-bottom: 10px; /* Space between image and game name */
 }
 
-.games-container a span {
-    font-size: 16px;
-    margin-top: 5px;
-    text-align: center; /* Center the game name text */
-}
-
-.games-container a:hover span {
+.games-container a:hover {
+    text-decoration: underline;
     color: #4CAF50; /* Highlighted text on hover */
 }
 
@@ -111,9 +104,5 @@ body {
     .games-container img {
         width: 120px;
         height: 120px;
-    }
-
-    .games-container a span {
-        font-size: 14px; /* Smaller text for smaller screens */
     }
 }
