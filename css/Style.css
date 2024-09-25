@@ -1,0 +1,119 @@
+/* Common styles for all pages */
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: darkgray;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+}
+
+.navbar {
+    display: flex;
+    background-color: darkgrey;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+}
+
+.navbar button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.navbar button:hover {
+    background-color: #45a049; /* Change on hover */
+}
+
+/* Styles for Home and Games Page */
+.content {
+    padding: 20px;
+    color: white; /* White text for better contrast on dark background */
+    text-align: center;
+}
+
+.content h1, .content p {
+    margin: 10px 0; /* Spacing between elements */
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between game items */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.games-container a {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    max-width: 150px; /* Ensure the image and text fit nicely */
+}
+
+.games-container img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px; /* Space between image and game name */
+}
+
+.games-container a span {
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center; /* Center the game name text */
+}
+
+.games-container a:hover span {
+    color: #4CAF50; /* Highlighted text on hover */
+}
+
+/* Settings container - not used in this page but included for consistency */
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .games-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .games-container a span {
+        font-size: 14px; /* Smaller text for smaller screens */
+    }
+}
